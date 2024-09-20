@@ -1,7 +1,7 @@
 using GovTebimodule.Controller.Utils;
 using MFilesAPI;
-using Serilog;
 using Tebilib;
+using Tebilog;
 
 namespace Tebifiles.Controller.ObjectController
 {
@@ -40,10 +40,10 @@ namespace Tebifiles.Controller.ObjectController
                 Log.Warning($"CreationDesDossiers - [{Config.Prop_own_parcelleNumero.Name}] vide...");
             }
 
-            CreerDossier($"RF.{parcelleNumero} - 1. Enquêtes");
+            CreerDossier($"RF.{parcelleNumero} - 1. Enquï¿½tes");
             CreerDossier($"RF.{parcelleNumero} - 2. Autorisations");
             CreerDossier($"RF.{parcelleNumero} - 3. Enseignes");
-            CreerDossier($"RF.{parcelleNumero} - 4. Autres éléments");
+            CreerDossier($"RF.{parcelleNumero} - 4. Autres ï¿½lï¿½ments");
         }
 
         void CreerDossier(string nomDuDossier)
